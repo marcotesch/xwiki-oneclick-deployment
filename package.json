@@ -1,0 +1,46 @@
+{
+  "name": "aws-xwiki-hosting",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcotesch/xwiki-oneclick-deployment"
+  },
+  "author": {
+    "email": "mtesch@tecracer.de",
+    "name": "Marco Tesch"
+  },
+  "private": "true",
+  "bin": {
+    "aws-xwiki-hosting": "bin/aws-xwiki-hosting.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.69.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "aws-cdk": "1.69.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "1.69.0",
+    "@aws-cdk/aws-ecs": "1.69.0",
+    "@aws-cdk/aws-efs": "1.69.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "1.69.0",
+    "@aws-cdk/aws-iam": "1.69.0",
+    "@aws-cdk/aws-kms": "1.69.0",
+    "@aws-cdk/aws-logs": "1.69.0",
+    "@aws-cdk/aws-rds": "1.69.0",
+    "@aws-cdk/aws-route53": "1.69.0",
+    "@aws-cdk/aws-secretsmanager": "1.69.0",
+    "@aws-cdk/core": "1.69.0",
+    "source-map-support": "^0.5.16"
+  }
+}
